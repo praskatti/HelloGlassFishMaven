@@ -140,6 +140,35 @@
                     </components>
                 </configuration>  
             </plugin>
+            <!--            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.1.2</version>
+                <configuration>
+                    <container>
+                        <containerId>glassfish3x</containerId>
+                        <type>remote</type>
+                    </container>
+                    <configuration>
+                        <type>runtime</type>
+                        <properties>
+                            <cargo.hostname>localhost</cargo.hostname>
+                            <cargo.remote.username>admin</cargo.remote.username>
+                            <cargo.remote.password>admin</cargo.remote.password>
+                            <cargo.remote.port>7048</cargo.remote.port>
+                            <cargo.rmi.port> 7048 </cargo.rmi.port>
+                            <cargo.glassfish.domain.name>dev</cargo.glassfish.domain.name>
+                        </properties>
+                    </configuration> 
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.glassfish.deployment</groupId>
+                        <artifactId>deployment-client</artifactId>
+                        <version>3.2-b06</version>
+                    </dependency>
+                </dependencies>
+            </plugin>-->
         </plugins>
     </build>
 
